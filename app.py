@@ -11,15 +11,12 @@ tabtitle = '2020 Agriculture Exports'
 sourceurl = 'https://plot.ly/python/choropleth-maps/'
 githublink = 'https://github.com/adam-tanner-24/306-agriculture-exports-dropdown'
 # here's the list of possible columns to choose from.
-list_of_columns =['total exports', 'beef', 'pork', 'poultry',
-       'dairy', 'fruits fresh', 'fruits proc', 'total fruits', 'veggies fresh',
-       'veggies proc', 'total veggies', 'corn', 'wheat', 'cotton']
 
 
 ########## Set up the chart
 
 import pandas as pd
-df = pd.read_csv('../assets/Top 5 Agricultural By State - Aggregate.csv')
+df = pd.read_csv('assets/Top 5 Agricultural By State - Aggregate.csv')
 
 list_of_columns=list(df.columns)
 list_of_columns.remove('State')
